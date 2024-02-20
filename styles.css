@@ -1,0 +1,339 @@
+#title {
+    color: tomato;
+}
+/*
+p.text {
+    color: slateblue;
+}*/
+
+p.e {
+    color: mediumseagreen;
+}
+
+div p {
+    color: aquamarine;
+}
+
+    /* esto es un comentario */
+div h2, div h3 { 
+    color: brown;
+}
+
+
+*{
+    font-size: 24px;
+    /* esto es un comentario */
+}
+
+
+/* esto es un comentario */
+
+/*
+este es un
+comentario
+de muchas 
+lineas
+*/
+
+/*antes del exagecimal siempre va el # y son 3 o 6 caracteres
+.color {
+    color: #00f;
+}
+hexagecimal*/
+
+
+/*rgb
+.color {
+    color: rgb(0, 255, 255);
+}
+*/
+
+/*border*/
+.color {
+    /* border: 5px black inset; */
+    /*
+        dotted
+        dashed
+        solid 
+        double
+        se pueden asignar a elementos
+        tridimencionales.groove
+        ride
+        inset
+        outsed.
+        none
+        hidden
+    */
+    /*Propiedades border*/
+    /*border style nos sirve para indicar el estilo del borde
+    sin necesidad de indicar el tamaño y color*/
+    border-style: dashed;
+    /*border color nos srive para indicar el color de nuestro borde*/
+    border-color: aqua;
+    /*nos sirve para asignar un borde redondeado*/
+    border-radius: 5px;
+    /*ancho del border*/
+    border-width: 5px;
+}
+
+/*unidades de medida
+px
+cm 
+pulgadas
+mm
+pt puntos un punto es un setetenta y dos avo de pulgado
+pc picas un pica son 12 pt
+em dos veces el tamaño de la fuente que se esta usando
+rem relativo al tamaño de la fuente del elemento raiz osea el de la etiqueta html que viene
+por defecto en 16 px, por lo que podriamos decir que un rem es igual a 16px
+*/
+
+/*como manipular el background*/
+#bg {
+    /*pa darl color al background*/
+    background-color: rgba(0, 0, 0);
+    /*cambiar transperencia del elemento completo*/
+    /*opacity:0.3;^*/
+    height: 200px;
+    /*colocar una imagen de backgroud
+    background-image: url('coffee.png');*/
+    
+    /*cambiar tamaño del background
+    background-size: 100px 100px;*/
+    
+    /*
+    auto: se asigna de manera automatica
+    cover: nos entrega una imagen proporcional al tamaño
+    contain: contiene la imagen al tamaño que nosotros le hayamos
+    asignado
+    */
+    /*hace que la imagen no se duplique y que solo salga una vez o mas
+    bien seria para colocar si se quiero que se repita o no podemos
+    elegir hasta la posicion que queremos qu ese repita
+    background-repeat: repeat-y;*/
+    
+    /*cambiar la posicion en que queremos que empiece a repetirse la imagen
+    background-position: right top;
+    */
+    
+    /*los valores que podemos asignar en la segunda posicion a background
+    position son: top center y bottom tambien podemos asignarle valores
+    en dimensiones*/
+
+    /*pa colocar todo en una sola propieda*/
+    background: #ff00 url('coffee.png') repeat-y center bottom / 100px 100px;
+    /*background-size: 100px 100px;*/
+    /* o se puede colocar en el mismo back despues de un / */
+
+    /*si usamos background despues que background size no sera tomada en
+    cuenta entonces hay que colocar despues*/
+}
+
+/*margin */
+
+.margen {
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    outline: 1px solid red;
+    /*
+    outline es la propiedad que esta por fuera el border pero esta antes del
+    margin
+    propiedad overflow, por defecto tiene el valor de visible
+    los diferentes valores que se le pueden asignar son hidden y scroll
+    con hidden todo el contenido que no alcance a mostrar lo mocha, y 
+    scroll agrega unas barras latelares para que podamos deslizarnos 
+    dentro del elemento
+    existen las sgtes margin
+    top
+    bottom
+    left
+    right
+    el primero en margin es top que es arriba, el segundo right que es
+    derecha el tercero bottom que es el de abajo
+    
+    margin seria los espacios fuera del elemento y padding los espacios
+    que se agregan dentro del elemento
+
+    (height: alto width: ancho)
+    */
+
+}
+
+.text {
+    /*font-family: para cambiar la fuente*/
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /*alinear texto*/
+    text-decoration: line-through;
+    /*
+    decora texto
+    underline subrayado
+    line-trough tachado
+    */
+    text-shadow: 3px 5px 5px blue;
+    /*
+    agrega un sombreado al texto
+    */
+}
+
+/*selectores de estado de un link*/
+
+/* cuando colocamos a:link es para seleccionar cuando a no ha sido visitado*/
+
+a:link  {
+    color: blueviolet;
+}
+
+/* cuando colocamos a:link es para seleccionar cuando a ya ha sido visitado */
+
+a:visited {
+    color: gray;
+}
+
+/* cuando colocamos a:hover es pa que cambie el color de a cuando tenemos el cursor en el*/
+a:hover {
+    color: yellow;
+}
+
+/* active es cuando le damos click*/
+
+a:active {
+    color: red;
+}
+
+/*Nota: tienen que estar orden*/
+
+ul {
+    background-color: cyan;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/*nth child es pa seleccionar unos elementos en particular se le puede colocar odd o even, odd par even impar*/
+
+
+/*la propiedad display nos va indicar como colocar los elementos de html sobre nuestro documento*/
+
+span {
+    /*display: block;*/
+    display: block;
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display:inline;
+}
+
+/*
+inline los elementos que agreguemos no van a comenzar en una nueva linea
+que a diferencia de displayblock que hara que los elementos partan en una nueva lina
+las etiquetas que viene por defecto con inline son los span, a, y la etiqueta de img
+*/
+/*para ocultar los elemementos display none y visibility hidden*/
+
+/*con la siguiente propiedad poremos asignar una ancho maximo a nuestros elementos, que esta se va diferenciar de width
+la diferencia entre width y maxwidth es que width siempre va asignar el ancho puede asignar como maximo ese ancho
+pero podria ser menos*/
+
+
+#position {
+    position: relative;
+    left: 20px;
+    /*top: 25px;*/
+
+}
+
+/*La propiedad position puede tener diferentes valores, static que es con el que vienen por defecto los 
+elementos html,relative es una posicion relitva a donde deberia a estar posicionado el elemento*/
+
+
+/*fixed indica que tiene que tener una posicion con respecto a los que nosotros estamos viendo*/
+
+/*absolute se posiciona con el elemento padre mas cercano que este tenga*/
+
+/*sticky es una mezcla entre relative y fixed*/
+
+/*propiedad que hace flotar elementos de html dentro de nuestro mismo documento*/
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 300px;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+/*
+.card {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+*/
+
+.inline {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+/*y pa centralo verticalmente
+*/
+
+.center2 {
+    text-align: center;
+    padding: 50px 0;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
